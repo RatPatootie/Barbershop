@@ -2,19 +2,15 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
 
 <AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="course.course.controller.MainController">
     <children>
-        <Label fx:id="UserLabel" alignment="CENTER" layoutX="242.0" layoutY="41.0" prefHeight="40.0" prefWidth="358.0" text="Ввійдіть для подальших дій" AnchorPane.leftAnchor="242.0" AnchorPane.rightAnchor="0.39999999999997726">
-            <font>
-                <Font size="23.0" />
-            </font>
-        </Label>
         <ToolBar layoutY="1.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
             <items>
                 <Button alignment="CENTER" cancelButton="true" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#logout" prefHeight="16.0" prefWidth="94.0" text="Вийти">
@@ -33,5 +29,9 @@
                 <Button onAction="#openStatistics" prefHeight="29.0" prefWidth="162.0" style="-fx-font-size: 12px;" text="Статистика" />
             </children>
         </VBox>
+      <Button  onAction="#showbutton" layoutX="430.0" layoutY="106.0" mnemonicParsing="false" text="Переглянути" />
+      <DatePicker fx:id="datePicker" layoutX="194.0" layoutY="106.0" />
+      <Label layoutX="241.0" layoutY="71.0" text="Введіть дату для перегляду бронювань" />
+      <FlowPane fx:id="flowContainer" layoutX="161.0" layoutY="150.0" prefHeight="200.0" prefWidth="440.0" />
     </children>
 </AnchorPane>

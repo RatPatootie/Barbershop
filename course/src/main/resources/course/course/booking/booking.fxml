@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="471.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="course.course.controller.booking.BookingController">
+    <children>
+        <ToolBar layoutY="1.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <items>
+                <Button alignment="CENTER" cancelButton="true" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#logout" prefHeight="16.0" prefWidth="94.0" text="Вийти">
+                    <opaqueInsets>
+                        <Insets top="10.0" />
+                    </opaqueInsets>
+                </Button>
+            <Button alignment="CENTER" contentDisplay="BOTTOM" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#back" prefHeight="26.0" prefWidth="54.0" text="Назад">
+               <opaqueInsets>
+                  <Insets left="100.0" />
+               </opaqueInsets>
+
+            </Button>
+            </items>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+        </ToolBar>
+        <VBox fx:id="sideBar" layoutX="1.0" layoutY="41.0" prefHeight="362.0" prefWidth="161.0" AnchorPane.leftAnchor="0.0">
+            <children>
+                <Button onAction="#openBookingEmp" prefHeight="34.0" prefWidth="162.0" style="-fx-font-size: 12px;" text="Вибір фахівця" />
+            <Button onAction="#openBookingService" prefHeight="34.0" prefWidth="162.0" style="-fx-font-size: 12px;" text="Вибір послуги" />
+            <Button onAction="#openBookingDate" prefHeight="34.0" prefWidth="162.0" style="-fx-font-size: 12px;" text="Вибір дати та часу" />
+            </children>
+        </VBox>
+      <BorderPane fx:id="labelBox" layoutX="184.0" layoutY="58.0" prefHeight="398.0" prefWidth="472.0">
+         <center>
+         </center>
+      </BorderPane>
+    </children>
+</AnchorPane>

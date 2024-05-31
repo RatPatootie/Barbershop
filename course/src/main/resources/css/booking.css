@@ -1,0 +1,9 @@
+.label {
+    -fx-text-fill: blue; /* Колір тексту */
+    -fx-font-size: 14px; /* Розмір шрифту */
+}
+
+.image-view {
+    -fx-border-color: black; /* Колір рамки */
+    -fx-border-width: 1px; /* Ширина рамки */
+}
